@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: Raleway, Palatino, serif;
+  height: 100%;
+  color: #282828; }
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+li, ul, ol, table, tr, td, th, thead, tbody,
+fieldset, legend,
+p {
+  margin: 0;
+  padding: 0; }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #b7a57a; }
+a:hover, a:active {
+  color: #4B2E83; }
+
+.front-page-banner {
+  height: 75%;
+  background: transparent url("/styles/cache/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  box-shadow: inset 0 -12px 8px -10px #000; }
+  .front-page-banner div {
+    font-weight: bold;
+    font-size: 28px;
+    box-shadow: 0 2px 8px 3px #222;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 28px 30px;
+    color: #FFF; }
+
+.banner-button {
+  text-align: center; }
+  .banner-button span {
+    display: inline-block;
+    height: 54px;
+    width: 54px;
+    border-radius: 27px;
+    margin-top: -27px;
+    background-color: #4B2E83; }
+
+.front-tri {
+  margin-top: 60px; }
+  .front-tri fieldset {
+    padding: 10px 28px 50px 28px;
+    border: none;
+    border-top: 1px solid #4B2E83; }
+
+/*# sourceMappingURL=global.css.map */

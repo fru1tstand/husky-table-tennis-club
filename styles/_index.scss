@@ -1,0 +1,40 @@
+// Includes styles relating to the root index.php file
+.front-page-banner {
+	height: 75%;
+	background: transparent url("/styles/cache/bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	box-shadow: inset 0 -12px 8px -10px #000;
+
+	div {
+		font-weight: bold;
+		font-size: 28px;
+		box-shadow: 0 2px 8px 3px #222;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: $content-padding 30px;
+		color: $husky-text-overlay-color;
+	}
+}
+
+$banner-button-size: 54px;
+.banner-button {
+	text-align: center;
+
+	span {
+		display: inline-block;
+		height: $banner-button-size;
+		width: $banner-button-size;
+		border-radius: $banner-button-size / 2;
+		margin-top: -$banner-button-size/2;
+		background-color: $husky-purple;
+	}
+}
+
+$front-tri-spacing: 50px;
+.front-tri {
+	margin-top: 60px;
+	fieldset {
+		padding: 10px $content-padding $front-tri-spacing $content-padding;
+		border: none;
+		border-top: 1px solid $husky-purple;
+	}
+}
