@@ -1,40 +1,36 @@
 // Includes styles relating to the root index.php file
 .front-page-banner {
-	height: 75%;
-	background: transparent url("/styles/cache/bg.jpg") no-repeat center center fixed;
+	height: 100%;
+	background: transparent url("/styles/cache/bg.jpg") no-repeat center center;
 	background-size: cover;
-	box-shadow: inset 0 -12px 8px -10px #000;
 
 	div {
+		position: absolute;
+		bottom: 0;
 		font-weight: bold;
+		padding: 30px $content-padding;
 		font-size: 28px;
-		box-shadow: 0 2px 8px 3px #222;
-		background-color: rgba(0, 0, 0, 0.8);
-		padding: $content-padding 30px;
-		color: $husky-text-overlay-color;
+		color: #FFF;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
 	}
 }
 
-$banner-button-size: 54px;
-.banner-button {
-	text-align: center;
 
-	span {
-		display: inline-block;
-		height: $banner-button-size;
-		width: $banner-button-size;
-		border-radius: $banner-button-size / 2;
-		margin-top: -$banner-button-size/2;
-		background-color: $husky-purple;
-	}
-}
-
-$front-tri-spacing: 50px;
+$front-tri-spacing: 30px;
+$front-tri-bezel: 5px;
 .front-tri {
-	margin-top: 60px;
-	fieldset {
-		padding: 10px $content-padding $front-tri-spacing $content-padding;
-		border: none;
-		border-top: 1px solid $husky-purple;
+	margin-top: $front-tri-spacing;
+	.title {
+		margin: $front-tri-spacing $content-padding/2 10px $content-padding/2;
+		padding: 0 $content-padding/2-$front-tri-bezel;
+		border-left: $front-tri-bezel solid $husky-gold;
+	}
+	.body {
+		padding: 0 $content-padding;
+	}
+	.block-time {
+		display: inline-block;
+		width: 100px;
 	}
 }

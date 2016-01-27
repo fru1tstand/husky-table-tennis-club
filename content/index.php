@@ -4,30 +4,40 @@ use httc\template\EmptyStaticPage;
 
 $body = <<<HTML
 <section class="front-page-banner">
-	<div>Husky Table Tennis Club</div>
+	<div>
+		Husky Table Tennis Club
+	</div>
 </section>
 <section class="front-tri">
-	<fieldset class="col-4">
-		<legend>About</legend>
-		<p>Welcome to the University of Washington's Husky Table Tennis Club. Connect with us on
-		<a href="https://www.facebook.com/groups/905310902883752/" target="_blank">Facebook</a> and
-		check us out on the <a href="https://www.youtube.com/channel/UCkTNmEuEjjfCAkJsrKQaGlg" target="_blank">YouTubes</a></p>
-	</fieldset>
+	<div class="col-4">
+		<div class="title">About</div>
+		<div class="body">
+			Hi!<br />
+			We're the Husky Table Tennis Club. We host open-table style playing (which just
+			means you're free to do whatever you want), and cater to players of all skill groups
+			(even those who have never picked up a paddle before). We provide equipment for free,
+			so come meet some awesome people or bring a group of friends for an entertaining night
+			out!
+		</div>
+	</div>
 
-	<fieldset class="col-4">
-		<legend>Location</legend>
-		<p>Find us at <a href="https://www.google.com/maps/place/University+of+Washington+Intramural+Activities+Bldg,+3924+Montlake+Blvd+NE,+Seattle,+WA+98195/@47.6533996,-122.3035942,15.89z" target="_blank">IMA Gym B</a></p>
-		<div>&nbsp;</div>
-		<p>
-			3924 Montlake Blvd NE<br />
-			Seattle, WA 98195
-		</p>
-	</fieldset>
+	<div class="col-4">
+		<div class="title">Meet Times</div>
+		<div class="body">
+			<span class="block-time">Monday</span> 7-10pm<br />
+			<span class="block-time">Thursday</span> 7-10pm<br />
+			<span class="block-time">Saturday</span> 10-1pm<br />
+		</div>
+	</div>
 
-	<fieldset class="col-4">
-		<legend>Hours</legend>
-		hi how are you
-	</fieldset>
+	<div class="col-4">
+		<div class="title">Location</div>
+		<div class="body">
+			You can find us at the
+			<a href="https://www.google.com/maps/place/University+of+Washington+Intramural+Activities+Bldg,+3924+Montlake+Blvd+NE,+Seattle,+WA+98195/@47.6533996,-122.3035942,15.89z"
+			   target="_blank">IMA</a> in gym B (back left).
+		</div>
+	</div>
 
 </section>
 asdfasdf
