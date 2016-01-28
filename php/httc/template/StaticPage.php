@@ -12,6 +12,9 @@ class StaticPage extends Content {
 
 	public static function getTemplateRenderContents(array $fields): string {
 		$fields[self::FIELD_BODY] = <<<HTML
+	<header>
+	
+	</header>
 	<div id="content-wrapper">
 		<nav>
 		</nav>

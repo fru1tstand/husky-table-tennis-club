@@ -1,36 +1,49 @@
 // Includes styles relating to the root index.php file
-.front-page-banner {
-	height: 100%;
-	background: transparent url("/styles/cache/bg.jpg") no-repeat center center;
-	background-size: cover;
+.index-title {
+	text-align: center;
 
-	div {
-		position: absolute;
-		bottom: 0;
-		font-weight: bold;
-		padding: 30px $content-padding;
-		font-size: 28px;
-		color: #FFF;
-		background-color: rgba(0, 0, 0, 0.5);
-		width: 100%;
+	.title {
+		padding-top: 100px;
+		padding-bottom: 20px;
+		font-size: 34px;
+	}
+	.title-underline {
+		width: 50%;
+		margin: 0 auto;
+		border-bottom: 1px solid $husky-gold;
 	}
 }
 
+.index-links {
+	padding-top: 100px;
 
-$front-tri-spacing: 30px;
-$front-tri-bezel: 5px;
-.front-tri {
-	margin-top: $front-tri-spacing;
+	.index-menu {
+		list-style: none;
+	}
+
+	li a {
+		display: block;
+		margin: $content-padding/2;
+		padding: $content-padding/2;
+		box-shadow: $box-shadow-layer-1;
+
+		&:link, &:visited {
+			color: $default-color;
+		}
+		&:hover, &:active {
+			color: $husky-gold;
+		}
+	}
+
 	.title {
-		margin: $front-tri-spacing $content-padding/2 10px $content-padding/2;
-		padding: 0 $content-padding/2-$front-tri-bezel;
-		border-left: $front-tri-bezel solid $husky-gold;
+		font-size: 20px;
 	}
-	.body {
-		padding: 0 $content-padding;
+	.hr {
+		display: block;
+		border-bottom: 1px solid #CCC;
+		width: 50%;
 	}
-	.block-time {
-		display: inline-block;
-		width: 100px;
+	.descr {
+		font-size: 14px;
 	}
 }

@@ -1,6 +1,7 @@
 // Variables used globally
 $default-font-family: Raleway, Palatino, serif;
-$default-color: #282828;
+$default-color: #515151;
+$default-background-color: #F5F5F5;
 
 $husky-purple: #4B2E83;
 $husky-gold: #b7a57a;
@@ -9,3 +10,14 @@ $husky-text-overlay-color: #FFF;
 // Sizing
 $media-width-sm: 450px;
 $content-padding: 28px;
+
+//Animation and transitions
+$default-animation-pattern: cubic-bezier(0.3, 0.3, 0.02, 1);
+@mixin transition($params...) {
+	-webkit-transition: $params;
+	-moz-transition: $params;
+	transition: $params;
+}
+
+// Shadows
+$box-shadow-layer-1: 2px 2px 6px 0 #999;
