@@ -1,0 +1,44 @@
+.global-navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $nav-background-color;
+	color: $nav-color;
+}
+.nav-push {
+	height: $nav-height;
+}
+
+// ********************************************************************
+// Collapsed nav (mobile)
+#nav-collapsed {
+	border-bottom: $nav-border-height solid $nav-border-color;
+	height: $nav-height;
+	line-height: $nav-height - $nav-border-height;
+	a, .nav-link {
+		display: block;
+		background-color: $nav-background-color;
+		color: $nav-color;
+		padding: 0 $small-content-padding;
+		height: $nav-link-height;
+		line-height: $nav-link-height;
+	}
+}
+#nav-collapsed-closed {
+	display: block;
+	width: 100%;
+	padding: 0 $small-content-padding;
+
+	> i {
+		display: inline-block;
+		margin-right: 12px;
+	}
+}
+#nav-collapsed-open {
+	display: none;
+	margin-top: 1px;
+}
+#nav-collapsed-controller:checked + #nav-collapsed-open {
+	display: block;
+}

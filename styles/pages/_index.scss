@@ -1,0 +1,43 @@
+.index-logo {
+	text-align: center;
+	padding: 40px $small-content-padding 0 $small-content-padding;
+	letter-spacing: 4px;
+	color: $default-inverse-color;
+
+	img {
+		width: 70%;
+	}
+}
+#index-slideshow {
+	background-color: $default-background-offset-color;
+	padding: $small-content-padding 0;
+	height: 50vh;
+	overflow-y: auto;
+	font-size: 0;
+	white-space: nowrap;
+
+	img {
+		height: 100%;
+		display: inline-block;
+		padding: 0 $small-content-padding/2;
+	}
+	.padding {
+		height: 100%;
+		width: $small-content-padding/2;
+		display: inline-block;
+	}
+}
+.hours-dow {
+	display: inline-block;
+	width: 130px;
+}
+.social-media {
+	text-align: center;
+
+	a {
+		font-size: 48px;
+		display: inline-block;
+		padding: $small-content-padding/2;
+		color: $default-inverse-color;
+	}
+}

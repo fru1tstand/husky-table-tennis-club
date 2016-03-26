@@ -1,4 +1,10 @@
-// global.scss defines the css entry point for the global styles.
-@import "variables";
-@import "template";
-@import "index";
+// ./Base | Variables, templates, and modular files
+
+@import "base/variables";
+@import "base/template";
+@import "base/navigation";
+
+
+// ./pages | Page specific styles
+
+@import "pages/_index";

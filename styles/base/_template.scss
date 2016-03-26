@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: $default-font-family;
+	background-color: $default-background-color;
+	color: $default-color;
+}
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+li, ul, ol, table, tr, td, th, thead, tbody,
+fieldset, legend,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.link {
+	text-decoration: none;
+
+	&:link, &:visited {
+		color: $link-color;
+	}
+	&:hover, &:active {
+		color: $link-active-color;
+	}
+}
+
+.controller {
+	display: none;
+}
+.container,
+section,
+.card {
+	padding: 0 $small-content-padding;
+	p {
+		&.spaced-top {
+			padding-top: $small-content-padding;
+		}
+	}
+
+}
+.section-anchor {
+	height: $nav-height + $small-content-padding/2;
+}
+.section-title {
+	background-color: $nav-background-color;
+	color: $nav-color;
+	padding: 4px $small-content-padding;
+}
+.subsection-title {
+	color: $default-inverse-color;
+	margin-bottom: 8px;
+
+	.fa {
+		float: right;
+		font-size: 30px;
+	}
+}
+.card {
+	background-color: $default-background-offset-color;
+
+	&.spaced {
+		padding: $small-content-padding;
+	}
+	&.spaced-top {
+		padding-top: $small-content-padding;
+	}
+	&.fragmented {
+		margin: $small-content-padding/2 0;
+		padding: $small-content-padding/2 $small-content-padding;
+	}
+}
+
+.no-list {
+	list-style: none;
+
+	li {
+		padding-left: 16px;
+		text-indent: -16px;
+
+		span {
+			padding: 0;
+			text-indent: 0;
+		}
+	}
+}
