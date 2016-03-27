@@ -1,0 +1,14 @@
+.hours-dow {
+	display: inline-block;
+	width: 130px;
+}
+.social-media {
+	text-align: center;
+
+	a {
+		font-size: 48px;
+		display: inline-block;
+		padding: $content-padding-mobile/2;
+		color: $default-inverse-color;
+	}
+}

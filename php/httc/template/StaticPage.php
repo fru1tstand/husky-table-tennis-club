@@ -30,7 +30,28 @@ class StaticPage extends Content{
 	<link rel="stylesheet" href="/styles/global.css" />
 </head>
 <body>
+
+<!--<noscript> &lt;!&ndash; I mean seriously? &ndash;&gt;-->
+<nav id="global-nav">
+	<div id="nav-mobile">
+		<a href="/" id="nav-mobile-collapsed-title">
+				<i class="fa fa-chevron-left"></i>{$fields[self::FIELD_TITLE]}</a>
+	</div>
+	<div id="nav-desktop">
+		
+	</div>
+</nav>
+<div id="global-nav-push"></div>
+<!--</noscript>-->
+
+<div id="static-logo">
+	<img src="/styles/cache/web-logo.gif" />
+	<div class="name">Husky Table Tennis Club</div>
+</div>
+
 	{$fields[self::FIELD_BODY]}
+	
+	<script src="/js/global.js"></script>
 </body>
 </html>
 HTML;

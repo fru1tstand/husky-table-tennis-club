@@ -1,0 +1,18 @@
+#sign-in-form {
+	display: flex;
+
+	input {
+		border: none;
+		border-bottom: 1px solid $nav-background-color;
+		background-color: $default-background-offset-color;
+		color: $default-inverse-color;
+		flex: 1 1 auto;
+		padding: 2px;
+	}
+	button {
+		background: $nav-background-color;
+		flex: 0 0 0;
+		border: none;
+		padding: 2px 6px;
+	}
+}

@@ -20,7 +20,7 @@ a {
 .link {
   text-decoration: none; }
   .link:link, .link:visited {
-    color: #4b2e83; }
+    color: #59d100; }
   .link:hover, .link:active {
     color: #2377e0; }
 
@@ -28,16 +28,11 @@ a {
   display: none; }
 
 .container,
-section,
 .card {
   padding: 0 22px; }
   .container p.spaced-top,
-  section p.spaced-top,
   .card p.spaced-top {
     padding-top: 22px; }
-
-.section-anchor {
-  height: 71px; }
 
 .section-title {
   background-color: #e8be2d;
@@ -50,6 +45,8 @@ section,
   .subsection-title .fa {
     float: right;
     font-size: 30px; }
+  .subsection-title .hint {
+    font-size: 12px; }
 
 .card {
   background-color: #3f3f3f; }
@@ -60,6 +57,8 @@ section,
   .card.fragmented {
     margin: 11px 0;
     padding: 11px 22px; }
+  .card.fenced-top {
+    margin-top: 11px; }
 
 .no-list {
   list-style: none; }
@@ -69,68 +68,107 @@ section,
     .no-list li span {
       padding: 0;
       text-indent: 0; }
+  .no-list.spaced li {
+    margin-top: 11px; }
+  .no-list.two-column {
+    font-size: 0; }
+    .no-list.two-column li {
+      font-size: 16px;
+      display: inline-block;
+      width: 50%; }
 
-.global-navigation {
+.slideshow {
+  background-color: #3f3f3f;
+  padding: 22px 0;
+  overflow-y: auto;
+  font-size: 0;
+  white-space: nowrap; }
+  .slideshow.fragmented {
+    margin: 11px 0; }
+  .slideshow iframe,
+  .slideshow img {
+    padding: 0 11px;
+    vertical-align: middle;
+    display: inline-block; }
+  .slideshow img {
+    height: 50vh; }
+  .slideshow .padding {
+    height: 100%;
+    width: 11px;
+    display: inline-block; }
+  .slideshow.fenced-bottom {
+    margin-bottom: 30px; }
+
+#global-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #e8be2d;
-  color: #ffffff; }
+  color: #ffffff;
+  z-index: 999; }
 
-.nav-push {
+#global-nav-push {
   height: 60px; }
 
-#nav-collapsed {
+#nav-mobile {
   border-bottom: 6px solid #9e7f22;
-  height: 60px;
-  line-height: 54px; }
-  #nav-collapsed a, #nav-collapsed .nav-link {
-    display: block;
-    background-color: #e8be2d;
-    color: #ffffff;
-    padding: 0 22px;
-    height: 44px;
-    line-height: 44px; }
+  height: 60px; }
 
-#nav-collapsed-closed {
+#nav-mobile-collapsed-title {
+  display: block;
+  background-color: #e8be2d;
+  color: #ffffff;
+  padding: 0 22px;
+  height: 54px;
+  line-height: 54px; }
+  #nav-mobile-collapsed-title i {
+    padding-right: 22px; }
+
+#nav-mobile-closed {
   display: block;
   width: 100%;
   padding: 0 22px; }
-  #nav-collapsed-closed > i {
+  #nav-mobile-closed > i {
     display: inline-block;
     margin-right: 12px; }
 
-#nav-collapsed-open {
+#nav-mobile-open {
   display: none;
   margin-top: 1px; }
 
-#nav-collapsed-controller:checked + #nav-collapsed-open {
+#nav-collapsed-controller:focus + #nav-collapsed-open {
   display: block; }
 
-.index-logo {
+#static-logo {
   text-align: center;
-  padding: 40px 22px 0 22px;
-  letter-spacing: 4px;
-  color: #ffffff; }
-  .index-logo img {
+  padding: 60px 22px; }
+  #static-logo img {
     width: 70%; }
+  #static-logo .name {
+    padding-top: 22px;
+    color: #ffffff;
+    letter-spacing: 4px; }
 
-#index-slideshow {
-  background-color: #3f3f3f;
-  padding: 22px 0;
-  height: 50vh;
-  overflow-y: auto;
-  font-size: 0;
-  white-space: nowrap; }
-  #index-slideshow img {
-    height: 100%;
+#index-nav {
+  text-align: center;
+  padding: 0 16.5px; }
+  #index-nav a {
     display: inline-block;
-    padding: 0 11px; }
-  #index-slideshow .padding {
-    height: 100%;
-    width: 11px;
-    display: inline-block; }
+    width: 94px;
+    height: 94px;
+    margin: 5.5px;
+    background-color: #3f3f3f; }
+    #index-nav a:link .fa, #index-nav a:visited .fa {
+      font-size: 42px;
+      color: #59d100;
+      line-height: 86px;
+      margin-bottom: -18px; }
+    #index-nav a:link .sub, #index-nav a:visited .sub {
+      color: #ffffff;
+      font-size: 12px; }
+    #index-nav a:hover .fa, #index-nav a:active .fa {
+      color: #52bc00; }
 
 .hours-dow {
   display: inline-block;
@@ -143,5 +181,20 @@ section,
     display: inline-block;
     padding: 11px;
     color: #ffffff; }
+
+#sign-in-form {
+  display: flex; }
+  #sign-in-form input {
+    border: none;
+    border-bottom: 1px solid #e8be2d;
+    background-color: #3f3f3f;
+    color: #ffffff;
+    flex: 1 1 auto;
+    padding: 2px; }
+  #sign-in-form button {
+    background: #e8be2d;
+    flex: 0 0 0;
+    border: none;
+    padding: 2px 6px; }
 
 /*# sourceMappingURL=global.css.map */

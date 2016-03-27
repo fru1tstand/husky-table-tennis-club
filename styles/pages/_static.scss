@@ -1,0 +1,14 @@
+#static-logo {
+	text-align: center;
+	padding: $static-logo-spacing-mobile $content-padding-mobile;
+
+	img {
+		width: 70%;
+	}
+
+	.name {
+		padding-top: $content-padding-mobile;
+		color: $default-inverse-color;
+		letter-spacing: 4px;
+	}
+}

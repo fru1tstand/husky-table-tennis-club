@@ -7,4 +7,7 @@
 
 // ./pages | Page specific styles
 
-@import "pages/_index";
+@import "pages/static";
+@import "pages/index";
+@import "pages/join";
+@import "pages/sign-in";

@@ -9,26 +9,34 @@ $default-inverse-color: #ffffff;
 
 $husky-purple: #4b2e83;
 
-$link-color: #4b2e83;
+$link-color: #59d100;
 $link-active-color: #2377e0;
 
 $nav-background-color: $default-background-inverse-color;
 $nav-border-color: #9e7f22; // def-bg-inv-clr offset
 $nav-color: $default-inverse-color;
 
+$home-nav-link-color: #59d100;
+$home-nav-link-active-color: #52bc00;
+$home-nav-link-background-color: $default-background-offset-color;
+
 $section-title-hr-color: #a2a2a2;
 
 // Sizing
 $responsive-tablet: 768px;
 
-$small-content-padding: 22px;
+$content-padding-mobile: 22px;
 
 $nav-border-height: 6px;
 $nav-height: 60px;
 $nav-link-height: 44px;
 
+$static-logo-spacing-mobile: 60px;
+
+$index-link-size-mobile: 94px;
+
 //Animation and transitions
-$animation-pattern: cubic-bezier(0.3, 0.3, 0.02, 1);
+$default-animation: cubic-bezier(0.3, 0.3, 0.02, 1);
 $ease-in: cubic-bezier(0, 0, 0, 1);
 $ease-out: cubic-bezier(0, 0, 1, 0);
 @mixin transition($params...) {

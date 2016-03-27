@@ -1,44 +1,49 @@
-.global-navigation {
+#global-nav {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	background-color: $nav-background-color;
 	color: $nav-color;
+	z-index: 999;
 }
-.nav-push {
-	height: $nav-height;
+#global-nav-push {
+	height: 60px;
 }
 
 // ********************************************************************
-// Collapsed nav (mobile)
-#nav-collapsed {
+// mobile nav
+#nav-mobile {
 	border-bottom: $nav-border-height solid $nav-border-color;
 	height: $nav-height;
+}
+
+#nav-mobile-collapsed-title {
+	display: block;
+	background-color: $nav-background-color;
+	color: $nav-color;
+	padding: 0 $content-padding-mobile;
+	height: $nav-height - $nav-border-height;
 	line-height: $nav-height - $nav-border-height;
-	a, .nav-link {
-		display: block;
-		background-color: $nav-background-color;
-		color: $nav-color;
-		padding: 0 $small-content-padding;
-		height: $nav-link-height;
-		line-height: $nav-link-height;
+	i {
+		padding-right: $content-padding-mobile;
 	}
 }
-#nav-collapsed-closed {
+
+#nav-mobile-closed {
 	display: block;
 	width: 100%;
-	padding: 0 $small-content-padding;
+	padding: 0 $content-padding-mobile;
 
 	> i {
 		display: inline-block;
 		margin-right: 12px;
 	}
 }
-#nav-collapsed-open {
+#nav-mobile-open {
 	display: none;
 	margin-top: 1px;
 }
-#nav-collapsed-controller:checked + #nav-collapsed-open {
+#nav-collapsed-controller:focus + #nav-collapsed-open {
 	display: block;
 }
