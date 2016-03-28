@@ -21,12 +21,11 @@ class StaticPage extends Content{
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!--<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>-->
-	<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
-	<!--<link rel="shortcut icon" href="https://s3.amazonaws.com/ks_web/fru1t.me/favicon.ico" />-->
-	<!--<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,600'>-->
-	<link rel="stylesheet" href="/styles/cache/raleway.css" />
-	<link rel="stylesheet" href="/styles/cache/fa/font-awesome.css" />
+	<link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/fm-httc/favicon.ico" />
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<!--<link rel="stylesheet" href="/styles/cache/raleway.css" />-->
+	<!--<link rel="stylesheet" href="/styles/cache/fa/font-awesome.css" />-->
 	<link rel="stylesheet" href="/styles/global.css" />
 </head>
 <body>
@@ -77,6 +76,16 @@ class StaticPage extends Content{
 <script src="/js/jq_easing.js"></script>
 <script src="/js/PageManager.js"></script>
 <script src="/js/global.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75691817-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
