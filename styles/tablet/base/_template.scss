@@ -1,0 +1,14 @@
+.container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 $content-padding-tablet;
+}
+.slideshow {
+	.padding {
+		width: $content-padding-tablet/2;
+	}
+
+	iframe, img {
+		padding: 0 $content-padding-tablet/2;
+	}
+}

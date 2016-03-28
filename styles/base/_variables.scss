@@ -25,8 +25,10 @@ $section-title-hr-color: #a2a2a2;
 
 // Sizing
 $responsive-tablet: 768px;
+$responsive-desktop: 1600px;
 
 $content-padding-mobile: 22px;
+$content-padding-tablet: 64px;
 
 $nav-border-height: 6px;
 $nav-height: 60px;
@@ -48,19 +50,6 @@ $ease-out: cubic-bezier(0, 0, 1, 0);
 	transition: $params;
 }
 
-@mixin keyframes($name) {
-	@-webkit-keyframes #{$name} {
-		@content;
-	}
-	@keyframes #{$name} {
-		@content;
-	}
-}
-
-@mixin animation($params...) {
-	-webkit-animation: $params;
-	animation: $params;
-}
 
 // Shadows
 $box-shadow-layer-1: 2px 2px 6px 0 #999;

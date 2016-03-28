@@ -27,17 +27,13 @@ a {
 .controller {
   display: none; }
 
-.container,
-.card {
+.container {
   padding: 0 22px; }
-  .container p.spaced-top,
-  .card p.spaced-top {
-    padding-top: 22px; }
 
 .section-title {
   background-color: #e8be2d;
   color: #ffffff;
-  padding: 4px 22px; }
+  padding: 4px 0; }
 
 .subsection-title {
   color: #ffffff;
@@ -51,12 +47,12 @@ a {
 .card {
   background-color: #3f3f3f; }
   .card.spaced {
-    padding: 22px; }
+    padding: 22px 0; }
   .card.spaced-top {
     padding-top: 22px; }
   .card.fragmented {
     margin: 11px 0;
-    padding: 11px 22px; }
+    padding: 11px 0; }
   .card.fenced-top {
     margin-top: 11px; }
 
@@ -82,7 +78,8 @@ a {
   padding: 22px 0;
   overflow-y: auto;
   font-size: 0;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: center; }
   .slideshow.fragmented {
     margin: 11px 0; }
   .slideshow iframe,
@@ -93,7 +90,7 @@ a {
   .slideshow img {
     height: 50vh; }
   .slideshow .padding {
-    height: 100%;
+    height: 1px;
     width: 11px;
     display: inline-block; }
   .slideshow.fenced-bottom {
@@ -124,30 +121,14 @@ a {
   display: block;
   background-color: #e8be2d;
   color: #ffffff;
-  padding: 0 22px;
   height: 54px;
   line-height: 54px; }
   #nav-mobile-collapsed-title i {
     padding-right: 22px; }
 
-#nav-mobile-closed {
-  display: block;
-  width: 100%;
-  padding: 0 22px; }
-  #nav-mobile-closed > i {
-    display: inline-block;
-    margin-right: 12px; }
-
-#nav-mobile-open {
-  display: none;
-  margin-top: 1px; }
-
-#nav-collapsed-controller:focus + #nav-collapsed-open {
-  display: block; }
-
 #static-logo {
   text-align: center;
-  padding: 60px 22px; }
+  padding: 60px 0; }
   #static-logo img {
     width: 70%; }
   #static-logo .name {
@@ -211,5 +192,16 @@ a {
     flex: 0 0 0;
     border: none;
     padding: 2px 6px; }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 64px; }
+
+  .slideshow .padding {
+    width: 32px; }
+  .slideshow iframe, .slideshow img {
+    padding: 0 32px; } }
 
 /*# sourceMappingURL=global.css.map */

@@ -3,19 +3,21 @@ require_once PHP_ROOT . '/httc/Setup.php';
 use httc\template\StaticPage;
 
 $body = <<<HTML
-<div class="section-title">Our Team</div>
+<div class="section-title"><div class="container">Our Team</div></div>
 <div class="card spaced-top fenced-top">
-	<div class="subsection-title">2015 - 2016</div>
-	<ul class="no-list two-column">
-		<li>Cecilia Chung</li>
-		<li>Elliot Kao</li>
-		<li>Emily Ye</li>
-		<li>Louis Gong</li>
-		<li>Sherry Han</li>
-		<li>Soubin Shin</li>
-		<li>Utako Kase</li>
-		<li>Wesley Wei</li>
-	</ul>
+	<div class="container">
+		<div class="subsection-title">2015 - 2016</div>
+		<ul class="no-list two-column">
+			<li>Cecilia Chung</li>
+			<li>Elliot Kao</li>
+			<li>Emily Ye</li>
+			<li>Louis Gong</li>
+			<li>Sherry Han</li>
+			<li>Soubin Shin</li>
+			<li>Utako Kase</li>
+			<li>Wesley Wei</li>
+		</ul>
+	</div>
 </div>
 <div class="slideshow fenced-bottom">
 	<div class="padding"></div>

@@ -1,13 +1,15 @@
 // ./Base | Variables, templates, and modular files
-
 @import "base/variables";
 @import "base/template";
 @import "base/navigation";
 
 
 // ./pages | Page specific styles
-
 @import "pages/static";
 @import "pages/index";
 @import "pages/join";
 @import "pages/sign-in";
+
+@media(min-width: $responsive-tablet) {
+	@import 'tablet/base/template';
+}

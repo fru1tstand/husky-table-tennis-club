@@ -28,28 +28,9 @@
 	display: block;
 	background-color: $nav-background-color;
 	color: $nav-color;
-	padding: 0 $content-padding-mobile;
 	height: $nav-height - $nav-border-height;
 	line-height: $nav-height - $nav-border-height;
 	i {
 		padding-right: $content-padding-mobile;
 	}
-}
-
-#nav-mobile-closed {
-	display: block;
-	width: 100%;
-	padding: 0 $content-padding-mobile;
-
-	> i {
-		display: inline-block;
-		margin-right: 12px;
-	}
-}
-#nav-mobile-open {
-	display: none;
-	margin-top: 1px;
-}
-#nav-collapsed-controller:focus + #nav-collapsed-open {
-	display: block;
 }

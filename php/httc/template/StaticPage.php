@@ -34,7 +34,9 @@ class StaticPage extends Content{
 <nav id="global-nav">
 	<div id="nav-mobile">
 		<a href="/" id="nav-mobile-collapsed-title">
-			<i class="fa fa-chevron-left"></i><span id="nav-mobile-title">{$fields[self::FIELD_TITLE]}</span>
+			<div class="container">
+				<i class="fa fa-chevron-left"></i><span id="nav-mobile-title">{$fields[self::FIELD_TITLE]}</span>
+			</div>
 		</a>
 	</div>
 	<div id="nav-desktop">
@@ -43,8 +45,10 @@ class StaticPage extends Content{
 </nav>
 <div id="global-nav-push"></div>
 <div id="static-logo">
-	<img src="/styles/cache/web-logo.gif" />
-	<div class="name">Husky Table Tennis Club</div>
+	<div class="container">
+		<img src="/styles/cache/web-logo.gif" />
+		<div class="name">Husky Table Tennis Club</div>
+	</div>
 </div>
 
 <div id="global-content">
