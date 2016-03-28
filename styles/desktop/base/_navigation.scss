@@ -3,7 +3,7 @@
 }
 #desktop-nav {
 	overflow-y: auto;
-	a {
+	> a {
 		display: block;
 		padding: $content-padding-mobile;
 		border-bottom: 1px solid $nav-border-color;
@@ -14,13 +14,15 @@
 			color: $nav-background-color;
 		}
 	}
+
 }
 #global-nav {
 	display: none;
 }
 #desktop-nav-brand {
+	text-align: center;
 	padding: $content-padding-tablet $content-padding-mobile;
 	border-bottom: 1px solid $nav-border-color;
-	font-size: 19px;
+	font-size: 24px;
 	letter-spacing: 1px;
 }

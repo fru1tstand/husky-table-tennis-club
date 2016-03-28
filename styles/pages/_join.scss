@@ -9,6 +9,11 @@
 		font-size: 48px;
 		display: inline-block;
 		padding: $content-padding-mobile/2;
-		color: $default-inverse-color;
+		&:link, &:visited {
+			color: $default-inverse-color;
+		}
+		&:hover, &:active {
+			color: $nav-background-color;
+		}
 	}
 }

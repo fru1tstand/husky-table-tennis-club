@@ -178,8 +178,11 @@ a {
   .social-media a {
     font-size: 48px;
     display: inline-block;
-    padding: 11px;
-    color: #ffffff; }
+    padding: 11px; }
+    .social-media a:link, .social-media a:visited {
+      color: #ffffff; }
+    .social-media a:hover, .social-media a:active {
+      color: #e8be2d; }
 
 #sign-in-form {
   display: flex;
@@ -282,22 +285,23 @@ a {
 
   #desktop-nav {
     overflow-y: auto; }
-    #desktop-nav a {
+    #desktop-nav > a {
       display: block;
       padding: 22px;
       border-bottom: 1px solid #9e7f22; }
-      #desktop-nav a:link, #desktop-nav a:visited {
+      #desktop-nav > a:link, #desktop-nav > a:visited {
         color: #ffffff; }
-      #desktop-nav a:hover, #desktop-nav a:active {
+      #desktop-nav > a:hover, #desktop-nav > a:active {
         color: #e8be2d; }
 
   #global-nav {
     display: none; }
 
   #desktop-nav-brand {
+    text-align: center;
     padding: 64px 22px;
     border-bottom: 1px solid #9e7f22;
-    font-size: 19px;
+    font-size: 24px;
     letter-spacing: 1px; }
 
   #static-logo .container {

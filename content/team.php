@@ -21,9 +21,9 @@ $body = <<<HTML
 </div>
 <div class="slideshow fenced-bottom">
 	<div class="padding"></div>
-	<iframe width="320" height="180" src="https://www.youtube.com/embed/83JrzHu4ufQ?rel=0" frameborder="0" allowfullscreen></iframe>
-	<iframe width="320" height="180" src="https://www.youtube.com/embed/3kKgjCmzqTQ?rel=0" frameborder="0" allowfullscreen></iframe>
+	<iframe width="320" height="180" src="https://www.youtube.com/embed/ef44RBu3LQw?rel=0" frameborder="0" allowfullscreen></iframe>
 	<iframe width="320" height="180" src="https://www.youtube.com/embed/kA5WosbAQ8g?rel=0" frameborder="0" allowfullscreen></iframe>
+	<iframe width="320" height="180" src="https://www.youtube.com/embed/videoseries?list=PLTuE3A9GfzUimcaKQDXs985fM63mBBaP5" frameborder="0" allowfullscreen></iframe>
 	<div class="padding"></div>
 </div>
 HTML;

@@ -39,7 +39,13 @@ class StaticPage extends Content{
 	</a>
 </nav>
 <div id="desktop-nav">
-	<div id="desktop-nav-brand">Husky Table Tennis Club</div>
+	<div id="desktop-nav-brand">
+		<div class="brand">Husky Table Tennis Club</div>
+		<div class="social-media">
+			<a href="https://www.facebook.com/groups/905310902883752/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+			<a href="https://www.youtube.com/channel/UCkTNmEuEjjfCAkJsrKQaGlg" target="_blank"><i class="fa fa-youtube-square"></i></a>
+		</div>
+	</div>
 	<a href="/">Home</a>
 	<a href="/about" data-title="About">About</a>
 	<a href="/join" data-title="Join">Join</a>

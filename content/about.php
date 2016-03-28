@@ -2,6 +2,22 @@
 require_once PHP_ROOT . '/httc/Setup.php';
 use httc\template\StaticPage;
 
+$images = [
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-doubles-serve.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-everybody.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game1.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game2.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game6.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/seattle-everybody.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/seattle-uw.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/uw-game-2.jpg',
+		'https://s3-us-west-1.amazonaws.com/fm-httc/about/uw-game1.jpg',
+];
+
+$imgHtml = "";
+foreach ($images as $image) {
+	$imgHtml .= "<img src='$image' alt='UW Table Tennis' />";
+}
 $body = <<<HTML
 <div class="section-title">
 	<div class="container">
@@ -27,9 +43,7 @@ $body = <<<HTML
 </div>
 <div class="slideshow fragmented">
 	<div class="padding"></div>
-	<img src="/styles/cache/bg.jpg" />
-	<img src="/styles/cache/bg.jpg" />
-	<img src="/styles/cache/bg.jpg" />
+	$imgHtml
 	<div class="padding"></div>
 </div>
 HTML;
