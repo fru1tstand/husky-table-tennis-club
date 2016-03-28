@@ -9,14 +9,14 @@
 	var staticDom = {
 		navBar: document.getElementById('global-nav'),
 		navBarSpacer: document.getElementById('global-nav-push'),
-		navMobileTitle: document.getElementById('nav-mobile-title'),
+		navTitle: document.getElementById('nav-title'),
 		error: document.getElementById('global-error'),
 		content: document.getElementById('global-content')
 	};
 
 	function callBindLinksOnPage() {
 		PageManager.bindLinksOnPage(
-				staticDom.navMobileTitle,
+				staticDom.navTitle,
 				staticDom.navBar,
 				staticDom.navBarSpacer,
 				navBarHeightPx,
@@ -27,6 +27,7 @@
 	}
 	callBindLinksOnPage();
 
+	//noinspection JSUnresolvedVariable
 	if (!!window.indexFirstLoad) {
 		PageManager.closeNav(staticDom.navBar);
 	}

@@ -6,6 +6,8 @@
 	background-color: $nav-background-color;
 	color: $nav-color;
 	z-index: 999;
+	border-bottom: $nav-border-height solid $nav-border-color;
+	height: $nav-height;
 
 	@include transition(top $animation-duration $animation-style);
 
@@ -17,14 +19,7 @@
 	height: 60px;
 }
 
-// ********************************************************************
-// mobile nav
-#nav-mobile {
-	border-bottom: $nav-border-height solid $nav-border-color;
-	height: $nav-height;
-}
-
-#nav-mobile-collapsed-title {
+#nav-title-container {
 	display: block;
 	background-color: $nav-background-color;
 	color: $nav-color;
@@ -33,4 +28,8 @@
 	i {
 		padding-right: $content-padding-mobile;
 	}
+}
+
+#desktop-nav {
+	display: none;
 }

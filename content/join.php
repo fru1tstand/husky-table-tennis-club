@@ -10,6 +10,7 @@ $body = <<<HTML
 			card is required for membership, otherwise a per-session fee will apply.</p>
 	</div>
 </div>
+
 <div class="card fragmented">
 	<div class="container">
 		<div class="subsection-title">Location<i class="fa fa-map"></i></div>

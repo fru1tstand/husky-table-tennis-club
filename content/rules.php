@@ -14,6 +14,8 @@ $body = <<<HTML
 		</ul>
 	</div>
 </div>
+<div class="desktop-break"></div>
+
 <div class="card fragmented">
 	<div class="container">
 		<div class="subsection-title">

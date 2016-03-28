@@ -32,37 +32,46 @@ class StaticPage extends Content{
 <body>
 
 <nav id="global-nav">
-	<div id="nav-mobile">
-		<a href="/" id="nav-mobile-collapsed-title">
-			<div class="container">
-				<i class="fa fa-chevron-left"></i><span id="nav-mobile-title">{$fields[self::FIELD_TITLE]}</span>
-			</div>
-		</a>
-	</div>
-	<div id="nav-desktop">
-		
-	</div>
+	<a href="/" id="nav-title-container">
+		<div class="container">
+			<i class="fa fa-chevron-left"></i><span id="nav-title">{$fields[self::FIELD_TITLE]}</span>
+		</div> 
+	</a>
 </nav>
-<div id="global-nav-push"></div>
-<div id="static-logo">
-	<div class="container">
-		<img src="/styles/cache/web-logo.gif" />
-		<div class="name">Husky Table Tennis Club</div>
+<div id="desktop-nav">
+	<div id="desktop-nav-brand">Husky Table Tennis Club</div>
+	<a href="/">Home</a>
+	<a href="/about" data-title="About">About</a>
+	<a href="/join" data-title="Join">Join</a>
+	<a href="/rules" data-title="Rules">Rules</a>
+	<a href="/team" data-title="Our Team">Our Team</a>
+	<a href="/sign-in" data-title="Sign In">Sign In</a>
+</div>
+
+<div id="desktop-content">
+	<div id="global-nav-push"></div>
+	<div id="static-logo">
+		<div class="container">
+			<img src="/styles/cache/web-logo.gif" />
+			<div class="name">Husky Table Tennis Club</div>
+		</div>
+	</div>
+	
+	<div id="global-content">
+		<div>{$fields[self::FIELD_BODY]}</div>
+	</div>
+	<div class="controller">
+		<div id="global-error" class="container">
+			<p>Uh oh! Something went wrong. <a href="/" class="link">Click here</a> to go back home.</p>
+		</div>
 	</div>
 </div>
 
-<div id="global-content">
-	<div>{$fields[self::FIELD_BODY]}</div>
-</div>
-<div class="controller">
-	<div id="global-error" class="container">
-		<p>Uh oh! Something went wrong. <a href="/" class="link">Click here</a> to go back home.</p>
-	</div>
-</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="/js/jq_easing.js"></script>
-	<script src="/js/PageManager.js"></script>
-	<script src="/js/global.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="/js/jq_easing.js"></script>
+<script src="/js/PageManager.js"></script>
+<script src="/js/global.js"></script>
+
 </body>
 </html>
 HTML;

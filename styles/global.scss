@@ -17,3 +17,9 @@
 @media(min-width: $responsive-that-horrible-resolution-in-between) {
 	@import 'tablet-plus/base/template';
 }
+
+@media(min-width: $responsive-desktop) {
+	@import 'desktop/base/template';
+	@import 'desktop/base/navigation';
+	@import 'desktop/pages/static';
+}

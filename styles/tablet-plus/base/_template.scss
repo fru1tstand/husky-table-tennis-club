@@ -5,7 +5,7 @@
 		padding: $content-padding-mobile;
 	}
 	&.fenced-top {
-		margin: 0 auto;
+		margin: $content-padding-mobile/2 auto;
 		max-width: none;
 	}
 }

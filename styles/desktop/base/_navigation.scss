@@ -1,0 +1,26 @@
+#global-nav {
+	left: $desktop-nav-width;
+}
+#desktop-nav {
+	overflow-y: auto;
+	a {
+		display: block;
+		padding: $content-padding-mobile;
+		border-bottom: 1px solid $nav-border-color;
+		&:link, &:visited {
+			color: $nav-color;
+		}
+		&:hover, &:active {
+			color: $nav-background-color;
+		}
+	}
+}
+#global-nav {
+	display: none;
+}
+#desktop-nav-brand {
+	padding: $content-padding-tablet $content-padding-mobile;
+	border-bottom: 1px solid $nav-border-color;
+	font-size: 19px;
+	letter-spacing: 1px;
+}
