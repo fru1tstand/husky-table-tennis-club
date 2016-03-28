@@ -57,7 +57,7 @@ class StaticPage extends Content{
 	<div id="global-nav-push"></div>
 	<div id="static-logo">
 		<div class="container">
-			<img src="/styles/cache/web-logo.gif" />
+			<img src="https://s3-us-west-1.amazonaws.com/fm-httc/web-logo2.gif" />
 			<div class="name">Husky Table Tennis Club</div>
 		</div>
 	</div>
