@@ -66,7 +66,7 @@ a {
 		padding-top: $content-padding-mobile;
 	}
 	&.fragmented {
-		margin: $content-padding-mobile/2 0;
+		margin: $content-padding-mobile/2 auto;
 		padding: $content-padding-mobile/2 0;
 	}
 	&.fenced-top {
@@ -109,9 +109,10 @@ a {
 	font-size: 0;
 	white-space: nowrap;
 	text-align: center;
+	margin: 0 auto;
 
 	&.fragmented {
-		margin: $content-padding-mobile/2 0;
+		margin: $content-padding-mobile/2 auto;
 	}
 
 	iframe,

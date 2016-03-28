@@ -1,0 +1,30 @@
+.card {
+	width: $responsive-tablet;
+
+	&.fragmented {
+		padding: $content-padding-mobile;
+	}
+	&.fenced-top {
+		margin: 0 auto;
+		max-width: none;
+	}
+}
+
+.slideshow {
+	white-space: normal;
+	width: $responsive-tablet;
+
+	.padding {
+		display: none;
+	}
+
+	img {
+		height: auto;
+		width: 100%;
+		margin: $content-padding-mobile/2 0;
+	}
+
+	iframe {
+		margin: $content-padding-mobile/2 0;
+	}
+}

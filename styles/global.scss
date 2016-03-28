@@ -13,3 +13,7 @@
 @media(min-width: $responsive-tablet) {
 	@import 'tablet/base/template';
 }
+
+@media(min-width: $responsive-that-horrible-resolution-in-between) {
+	@import 'tablet-plus/base/template';
+}
