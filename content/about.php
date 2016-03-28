@@ -13,7 +13,7 @@ $body = <<<HTML
 		<p>The Husky Table Tennis club (httc) serves the University of Washington community with a friendly
 			atmosphere to train or just have fun. With skill levels ranging from having never picked
 			up a paddle, to tournament participating individuals, the club caters and welcomes all, to
-			enjoy the sport. <a href="/join" class="link">Click here</a> to join.</p>
+			enjoy the sport. <a href="/join" class="link" data-title="Join">Click here</a> to join.</p>
 	</div>
 </div>
 <div class="card fragmented">
