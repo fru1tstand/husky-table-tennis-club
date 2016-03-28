@@ -106,7 +106,12 @@ a {
   right: 0;
   background-color: #e8be2d;
   color: #ffffff;
-  z-index: 999; }
+  z-index: 999;
+  -webkit-transition: top 0.5s cubic-bezier(0.3, 0.3, 0.02, 1);
+  -moz-transition: top 0.5s cubic-bezier(0.3, 0.3, 0.02, 1);
+  transition: top 0.5s cubic-bezier(0.3, 0.3, 0.02, 1); }
+  #global-nav.closed {
+    top: -54px; }
 
 #global-nav-push {
   height: 60px; }
@@ -150,6 +155,16 @@ a {
     color: #ffffff;
     letter-spacing: 4px; }
 
+#global-content > div {
+  margin-top: 0;
+  opacity: 1;
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.3, 0.3, 0.02, 1), opacity 0.5s cubic-bezier(0.3, 0.3, 0.02, 1);
+  -moz-transition: margin-top 0.5s cubic-bezier(0.3, 0.3, 0.02, 1), opacity 0.5s cubic-bezier(0.3, 0.3, 0.02, 1);
+  transition: margin-top 0.5s cubic-bezier(0.3, 0.3, 0.02, 1), opacity 0.5s cubic-bezier(0.3, 0.3, 0.02, 1); }
+  #global-content > div.initial-frame {
+    margin-top: 54px;
+    opacity: 0; }
+
 #index-nav {
   text-align: center;
   padding: 0 16.5px; }
@@ -161,7 +176,7 @@ a {
     background-color: #3f3f3f; }
     #index-nav a:link .fa, #index-nav a:visited .fa {
       font-size: 42px;
-      color: #59d100;
+      color: #b7a57a;
       line-height: 86px;
       margin-bottom: -18px; }
     #index-nav a:link .sub, #index-nav a:visited .sub {

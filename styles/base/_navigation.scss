@@ -6,6 +6,12 @@
 	background-color: $nav-background-color;
 	color: $nav-color;
 	z-index: 999;
+
+	@include transition(top $animation-duration $animation-style);
+
+	&.closed {
+		top: -($nav-height - $nav-border-height);
+	}
 }
 #global-nav-push {
 	height: 60px;

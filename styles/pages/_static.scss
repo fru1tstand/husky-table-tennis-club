@@ -12,3 +12,17 @@
 		letter-spacing: 4px;
 	}
 }
+#global-content {
+	> div {
+		margin-top: 0;
+		opacity: 1;
+
+		@include transition(margin-top $animation-duration $animation-style,
+				opacity $animation-duration $animation-style);
+
+		&.initial-frame {
+			margin-top: $nav-height - $nav-border-height;
+			opacity: 0;
+		}
+	}
+}

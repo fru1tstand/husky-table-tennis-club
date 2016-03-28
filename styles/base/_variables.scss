@@ -1,13 +1,14 @@
 // Variables used globally
 $default-font-family: Raleway, monospace; //test //Palatino, serif;
 
+$husky-purple: #4b2e83;
+$husky-gold: #b7a57a;
+
 $default-background-color: #333333;
 $default-background-inverse-color: #e8be2d;
 $default-background-offset-color: #3f3f3f;
 $default-color: #00bf7f;
 $default-inverse-color: #ffffff;
-
-$husky-purple: #4b2e83;
 
 $link-color: #59d100;
 $link-active-color: #2377e0;
@@ -16,7 +17,7 @@ $nav-background-color: $default-background-inverse-color;
 $nav-border-color: #9e7f22; // def-bg-inv-clr offset
 $nav-color: $default-inverse-color;
 
-$home-nav-link-color: #59d100;
+$home-nav-link-color: $husky-gold;
 $home-nav-link-active-color: #52bc00;
 $home-nav-link-background-color: $default-background-offset-color;
 
@@ -36,13 +37,29 @@ $static-logo-spacing-mobile: 60px;
 $index-link-size-mobile: 94px;
 
 //Animation and transitions
-$default-animation: cubic-bezier(0.3, 0.3, 0.02, 1);
+$animation-duration: 0.5s;
+$animation-style: cubic-bezier(0.3, 0.3, 0.02, 1);
 $ease-in: cubic-bezier(0, 0, 0, 1);
 $ease-out: cubic-bezier(0, 0, 1, 0);
+
 @mixin transition($params...) {
 	-webkit-transition: $params;
 	-moz-transition: $params;
 	transition: $params;
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+@mixin animation($params...) {
+	-webkit-animation: $params;
+	animation: $params;
 }
 
 // Shadows

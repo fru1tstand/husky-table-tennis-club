@@ -31,26 +31,33 @@ class StaticPage extends Content{
 </head>
 <body>
 
-<!--<noscript> &lt;!&ndash; I mean seriously? &ndash;&gt;-->
 <nav id="global-nav">
 	<div id="nav-mobile">
 		<a href="/" id="nav-mobile-collapsed-title">
-				<i class="fa fa-chevron-left"></i>{$fields[self::FIELD_TITLE]}</a>
+			<i class="fa fa-chevron-left"></i><span id="nav-mobile-title">{$fields[self::FIELD_TITLE]}</span>
+		</a>
 	</div>
 	<div id="nav-desktop">
 		
 	</div>
 </nav>
 <div id="global-nav-push"></div>
-<!--</noscript>-->
-
 <div id="static-logo">
 	<img src="/styles/cache/web-logo.gif" />
 	<div class="name">Husky Table Tennis Club</div>
 </div>
 
-	{$fields[self::FIELD_BODY]}
-	
+<div id="global-content">
+	<div>{$fields[self::FIELD_BODY]}</div>
+</div>
+<div class="controller">
+	<div id="global-error" class="container">
+		<p>Uh oh! Something went wrong. <a href="/" class="link">Click here</a> to go back home.</p>
+	</div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="/js/jq_easing.js"></script>
+	<script src="/js/PageManager.js"></script>
 	<script src="/js/global.js"></script>
 </body>
 </html>

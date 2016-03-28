@@ -5,29 +5,30 @@ use httc\template\StaticPage;
 $body = <<<HTML
 
 <div id="index-nav">
-	<a href="/about">
+	<a href="/about" data-title="About">
 		<i class="fa fa-info"></i>
 		<div class="sub">About</div>
 	</a>
-	<a href="/join">
+	<a href="/join" data-title="Join">
 		<i class="fa fa-user-plus"></i>
 		<div class="sub">Join</div>
 	</a>
-	<a href="/rules">
+	<a href="/rules" data-title="Rules">
 		<i class="fa fa-tasks"></i>
 		<div class="sub">Rules</div>
 	</a>
-	<a href="/team">
+	<a href="/team" data-title="Our Team">
 		<i class="fa fa-users"></i>
 		<div class="sub">Our Team</div>
 	</a>
-	<a href="/sign-in">
+	<a href="/sign-in" data-title="Sign In">
 		<i class="fa fa-sign-in"></i>
 		<div class="sub">Sign In</div>
 	</a>
-	
 </div>
-
+<script>
+	window.indexFirstLoad = true;
+</script>
 HTML;
 
 StaticPage::createContent()
