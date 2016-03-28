@@ -12,11 +12,11 @@
 		 * Sets the navigation bar to an open state.
 		 *
 		 * @param {!string} navBarText
-		 * @param {!Element} navMobileTitleEl
+		 * @param {!Element} navTitleEl
 		 * @param {!Element} navBarEl
 		 */
-		openNav: function (navBarText, navMobileTitleEl, navBarEl) {
-			navMobileTitleEl.innerHTML = navBarText;
+		openNav: function (navBarText, navTitleEl, navBarEl) {
+			navTitleEl.innerHTML = navBarText;
 			if (navBarEl.classList.contains('closed')) {
 				navBarEl.classList.remove('closed');
 			}
@@ -37,6 +37,26 @@
 			}
 		},
 
+		historyPushState: function(title, content, url) {
+			window.history.pushState({ 'title': title, 'content': content}, title, url);
+		},
+
+		historyPopState: function(title, content, contentEl, navBarEl, navTitleEl) {
+			if (!title) {
+				this.closeNav(navBarEl);
+			} else {
+				this.openNav(title, navTitleEl, navBarEl);
+			}
+			this.clearCurrentContent(contentEl);
+			var newContentEl = document.createElement('div');
+			newContentEl.innerHTML = content;
+			newContentEl.classList.add('initial-frame');
+			contentEl.appendChild(newContentEl);
+			//noinspection BadExpressionStatementJS
+			getComputedStyle(newContentEl).opacity;
+			newContentEl.classList.remove('initial-frame');
+		},
+
 		/**
 		 * Opens the specified page url and animates it into the dom
 		 *
@@ -49,6 +69,7 @@
 			var didAnimationComplete = false;
 			var didAjaxLoadComplete = false;
 			var newContentEl = errorEl;
+			var self = this;
 
 			function completeAnimationIn() {
 				if (!didAnimationComplete || !didAjaxLoadComplete) {
@@ -77,6 +98,7 @@
 				success: function (data) {
 					newContentEl = document.createElement('div');
 					newContentEl.innerHTML = data.body;
+					self.historyPushState(data.title, data.body, contentPageUrl);
 				},
 				complete: function () {
 					didAjaxLoadComplete = true;

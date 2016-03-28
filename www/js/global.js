@@ -27,6 +27,13 @@
 	}
 	callBindLinksOnPage();
 
+	// History
+	window.onpopstate = function(e) {
+		PageManager.historyPopState(e.state.title, e.state.content, staticDom.content, staticDom.navBar, staticDom.navTitle);
+		callBindLinksOnPage();
+	};
+	PageManager.historyPushState(staticDom.navTitle.text, staticDom.content.innerHTML, window.location);
+
 	//noinspection JSUnresolvedVariable
 	if (!!window.indexFirstLoad) {
 		PageManager.closeNav(staticDom.navBar);
