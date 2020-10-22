@@ -57,6 +57,16 @@ a {
 		font-size: 12px;
 	}
 }
+.sub-subsection-title {
+    color: $default-inverse-color;
+    font-style: italic;
+    margin-bottom: 4px;
+    font-size: 14px;
+
+    &.spaced-top {
+		padding-top: $content-padding-mobile;
+    }
+}
 .card {
 	background-color: $default-background-offset-color;
 
