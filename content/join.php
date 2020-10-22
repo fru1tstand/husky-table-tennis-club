@@ -30,7 +30,6 @@ $body = <<<HTML
 		<ul class="no-list">
 			<li><span class="hours-dow">Monday</span>7pm-10pm</li>
 			<li><span class="hours-dow">Thursday</span>7pm-10pm</li>
-			<li><span class="hours-dow">Saturday</span>10am-1pm</li>
 		</ul>
 		<p class="spaced-top">All other times, the gym is open for badminton or basketball.</p>
 	</div>
