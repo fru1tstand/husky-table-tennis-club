@@ -157,6 +157,36 @@ $body = <<<HTML
 	<iframe width="320" height="180" src="https://www.youtube.com/embed/videoseries?list=PLTuE3A9GfzUimcaKQDXs985fM63mBBaP5" frameborder="0" allowfullscreen></iframe>
 	<div class="padding"></div>
 </div>
+
+
+<div class="section-title"><div class="container">Coaches</div></div>
+<div class="card fragmented">
+    <div class="container">
+        <div class="subsection-title">Coach Richard (LingShuai Meng)</div>
+        <div class="sub-subsection-title">Achievements</div>
+        <ul class="">
+            <li>2011 Chinese Ping Pong Association Challenge Singles Champion</li>
+            <li>2011 Chinese Ping Pong Association Challenge Team Champion</li>
+            <li>2014 US Southern Open Singles Champion</li>
+            <li>2016 Washington State Open Singles Champion</li>
+            <li>2016 US Open U2500 Singles Champion</li>
+            <li>2016 US Open U2600 Singles Semi-finalist</li>
+            <li>2017 US Open U2600 Singles Semi-finalist</li>
+            <li>2017 Hawkeye Open U2550 Singles 3rd place</li>
+            <li>2018 Washington State Open Singles Champion</li>
+        </ul>
+    </div>
+</div>
+
+<div class="slideshow fenced-bottom">
+	<div class="padding"></div>
+	<img src="https://fm-httc.s3-us-west-1.amazonaws.com/about/coach-richard-ball-feed.jpg" alt="Coach Richard" />
+	<img src="https://fm-httc.s3-us-west-1.amazonaws.com/about/coach-richard-student.jpg" alt="Coach Richard" />
+	<img src="https://fm-httc.s3-us-west-1.amazonaws.com/about/coach-richard-students.jpg" alt="Coach Richard" />
+	<iframe width="400" height="260" src="https://www.youtube.com/embed/oPQd-iyAp_M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="padding"></div>
+</div>
+
 HTML;
 
 StaticPage::createContent()
