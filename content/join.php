@@ -40,7 +40,7 @@ $body = <<<HTML
 		<div class="subsection-title">Price<i class="fa fa-usd"></i></div>
 		<ul class="no-list">
 			<li><span class="hours-dow">Per Session</span>$1/person</li>
-			<li><span class="hours-dow">Per Quarter</span>$10/student</li>
+			<li><span class="hours-dow">Per Quarter</span>$15/student</li>
 			<li><span class="hours-dow"></span>$25/adult</li>
 		</ul>
 		<p class="spaced-top">As much as we love free stuff as well, the club purchases all the
