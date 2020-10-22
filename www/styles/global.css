@@ -42,13 +42,17 @@ a {
 
 .section-title {
   background-color: #e8be2d;
-  color: #ffffff;
-  padding: 4px 0;
+  color: #333333;
+  padding: 12px 0;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .subsection-title {
   color: #ffffff;
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .subsection-title .fa {
   float: right;
@@ -62,10 +66,9 @@ a {
   color: #ffffff;
   font-style: italic;
   margin-bottom: 4px;
-  font-size: 14px;
 }
 .sub-subsection-title.spaced-top {
-  padding-top: 22px;
+  margin-top: 22px;
 }
 
 .card {

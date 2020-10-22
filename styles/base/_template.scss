@@ -42,12 +42,16 @@ a {
 
 .section-title {
 	background-color: $nav-background-color;
-	color: $nav-color;
-	padding: 4px 0;
+	color: $default-background-color;
+	padding: 12px 0;
+	font-size: 28px;
+	font-weight: bold;
 }
 .subsection-title {
 	color: $default-inverse-color;
 	margin-bottom: 8px;
+	font-size: 20px;
+	font-weight: bold;
 
 	.fa {
 		float: right;
@@ -61,10 +65,9 @@ a {
     color: $default-inverse-color;
     font-style: italic;
     margin-bottom: 4px;
-    font-size: 14px;
 
     &.spaced-top {
-		padding-top: $content-padding-mobile;
+		margin-top: $content-padding-mobile;
     }
 }
 .card {
