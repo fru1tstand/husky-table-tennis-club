@@ -3,15 +3,17 @@ require_once PHP_ROOT . '/httc/Setup.php';
 use httc\template\StaticPage;
 
 $images = [
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-doubles-serve.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-everybody.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game1.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game2.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game6.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/seattle-everybody.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/seattle-uw.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/uw-game-2.jpg',
-		'https://s3-us-west-1.amazonaws.com/fm-httc/about/uw-game1.jpg',
+    'https://fm-httc.s3-us-west-1.amazonaws.com/about/uw-tourny-2019-w-coach.jpg',
+    'https://fm-httc.s3-us-west-1.amazonaws.com/about/uw-tourny-2019.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-doubles-serve.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-everybody.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game1.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game2.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/oregon-game6.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/seattle-everybody.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/seattle-uw.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/uw-game-2.jpg',
+    'https://s3-us-west-1.amazonaws.com/fm-httc/about/uw-game1.jpg',
 ];
 
 $imgHtml = "";
