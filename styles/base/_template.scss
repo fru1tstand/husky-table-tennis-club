@@ -86,6 +86,11 @@ a {
 	&.fenced-top {
 		margin-top: $content-padding-mobile/2;
 	}
+
+	img {
+	    margin: 10px 0;
+	    width: 100%;
+	}
 }
 
 .no-list {

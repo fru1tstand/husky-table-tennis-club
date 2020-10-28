@@ -28,6 +28,10 @@
 	border-top: $nav-border-height solid $nav-border-color;
 	display: inline-block;
 
+	&.wide {
+	    width: 600px;
+	}
+
 	&.fragmented {
 		margin: $content-padding-mobile;
 	}

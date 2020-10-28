@@ -87,6 +87,10 @@ a {
 .card.fenced-top {
   margin-top: 11px;
 }
+.card img {
+  margin: 10px 0;
+  width: 100%;
+}
 
 .no-list {
   list-style: none;
@@ -337,6 +341,9 @@ a {
     background-color: transparent;
     border-top: 6px solid #9e7f22;
     display: inline-block;
+  }
+  .card.wide {
+    width: 600px;
   }
   .card.fragmented {
     margin: 22px;

@@ -160,9 +160,9 @@ $body = <<<HTML
 
 
 <div class="section-title"><div class="container">Coaches</div></div>
-<div class="card fragmented">
+<div class="card fragmented wide">
     <div class="container">
-        <div class="subsection-title">Coach Richard (LingShuai Meng)</div>
+        <div class="subsection-title">Head Coach: Richard (LingShuai Meng)</div>
         <div class="sub-subsection-title">Achievements</div>
         <ul class="">
             <li>2011 Chinese Ping Pong Association Challenge Singles Champion</li>
@@ -186,6 +186,28 @@ $body = <<<HTML
 	<iframe width="400" height="260" src="https://www.youtube.com/embed/oPQd-iyAp_M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<div class="padding"></div>
 </div>
+
+<div class="card fragmented">
+    <div class="container">
+        <div class="subsection-title">Assistant Coach: Ryan Chan</div>
+        <img src="https://fm-httc.s3-us-west-1.amazonaws.com/about/coach_ryan.jpg" alt="Assistant Coach Ryan Chan">
+    </div>
+</div>
+
+<div class="card fragmented">
+    <div class="container">
+        <div class="subsection-title">Assistant Coach: Utako Kase</div>
+        <img src="https://fm-httc.s3-us-west-1.amazonaws.com/about/coach_utako.jpg" alt="Assistant Coach Utako Kase">
+    </div>
+</div>
+
+<div class="card fragmented">
+    <div class="container">
+        <div class="subsection-title">Assistant Coach: Aaron Wang</div>
+        <img src="https://fm-httc.s3-us-west-1.amazonaws.com/about/coach_aaron.jpg" alt="Assistant Coach Aaron Wang">
+    </div>
+</div>
+
 
 HTML;
 
