@@ -21,10 +21,6 @@ $body = <<<HTML
 		<i class="fa fa-users"></i>
 		<div class="sub">Our Team</div>
 	</a>
-	<a href="/sign-in" data-title="Sign In">
-		<i class="fa fa-sign-in"></i>
-		<div class="sub">Sign In</div>
-	</a>
 </div>
 <script>
 	window.indexFirstLoad = true;
