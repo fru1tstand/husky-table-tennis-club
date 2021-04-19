@@ -12,6 +12,22 @@ $body = <<<HTML
 			<li>Don't abuse our equipment</li>
 			<li>So long as you follow the above two rules, you may play whatever kind of games you wish</li>
 		</ul>
+		<br />
+		<div class="subsection-title">TEMPORARY COVID RULES</div>
+		<!--<ul class="no-list spaced">-->
+		<ul class="no-list spaced">
+		    <li>Consecutive playing time on the same table with the same opponent is limited to 1 hour to ensure others get time to play. You may sign up for other tables if available but please give others a chance to play too!</li>
+            <li>A face mask is required when inside the gym at ALL TIMES.</li>
+            <li>Physical distance is maintained (length of the table 9ft). </li>
+            <li>Tables will be cleaned before any new player uses a table.</li>
+            <li>No side changes allowed between games.</li>
+            <li>No doubles play allowed.</li>
+            <li>No multi-ball play allowed.</li>
+            <li>No wiping of hands allowed on tables during matches.</li>
+            <li>No cleaning of paddles by breathing on them allowed.</li>
+            <li>No sharing of equipment. E.g. paddle, shoes, etc. (If you do not have any equipment, please contact an officer and we can reserve one for you, please do not share with anyone)</li>
+            <li>The club will not provide drinking water. Please bring your own.</li>
+		</ul>
 	</div>
 </div>
 <div class="desktop-break"></div>
